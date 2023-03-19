@@ -1,8 +1,15 @@
+import { ChakraProvider } from "@chakra-ui/react";
+import Main from "./pages/main";
+
+import "./index.css";
+
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <ChakraProvider>
+      <div className="App">
+        <Main />
+      </div>
+    </ChakraProvider>
   );
 }
 

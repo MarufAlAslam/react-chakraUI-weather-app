@@ -1,1 +1,15 @@
+.App {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../src/assets/img/bg.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
 
+  /* display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
