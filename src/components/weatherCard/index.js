@@ -1,4 +1,12 @@
-import { Card, CardBody, FormControl, Input, Text } from "@chakra-ui/react";
+import {
+  Card,
+  CardBody,
+  Center,
+  Flex,
+  FormControl,
+  Input,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
 
 const WeatherCard = ({ weatherData, setLocation }) => {
@@ -24,12 +32,15 @@ const WeatherCard = ({ weatherData, setLocation }) => {
       </Card>
       <Card minWidth="550px" textAlign="center">
         <CardBody>
-          <Text fontSize="5xl" fontWeight="bold">
-            {weatherData.location?.name}
-          </Text>
-          <Text fontSize="3xl" fontWeight="bold">
-            {weatherData.current?.temp_c}°C
-          </Text>
+          <Flex justify="center" align="center">
+            <Text fontSize="5xl" fontWeight="bold">
+              {weatherData.location?.name}
+            </Text>{" "}
+            <Text fontSize="3xl" fontWeight="semibold" marginTop="5px">
+              ( {weatherData.current?.temp_c}°C)
+            </Text>
+          </Flex>
+          <Text fontSize="3xl">{weatherData.location?.country}</Text>
         </CardBody>
       </Card>
     </div>
