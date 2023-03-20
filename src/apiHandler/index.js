@@ -41,7 +41,6 @@ const ApiHandler = () => {
 
   console.log("historyData:" + historyData);
 
-  useEffect(() => {}, []);
   return (
     <div>
       <WeatherCard
