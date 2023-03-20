@@ -19,6 +19,10 @@ This app was built using the following tools:
 - CSS
 - Media query
 
+## Overview
+
+![React Weather App Overview](./screenshot/weather.gif)
+
 ## Features
 
 Users can see the following information for a given location:
