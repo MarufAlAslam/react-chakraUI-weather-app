@@ -25,7 +25,12 @@ const WeatherCard = ({ weatherData, setLocation, historyData }) => {
   };
   return (
     <div>
-      <Card marginBottom="20px" bg={"#D5E0FF"}>
+      <Card
+        marginBottom="20px"
+        bg={"#D5E0FF"}
+        w={[300, 400, 500, 600]}
+        className="search"
+      >
         <CardBody>
           <FormControl>
             <form action="" onSubmit={locationHandler}>
@@ -43,7 +48,12 @@ const WeatherCard = ({ weatherData, setLocation, historyData }) => {
           </FormControl>
         </CardBody>
       </Card>
-      <Card minWidth="550px" textAlign="center" bg={"#D5E0FF"}>
+      <Card
+        minWidth="550px"
+        textAlign="center"
+        bg={"#D5E0FF"}
+        w={[300, 400, 500, 600]}
+      >
         <CardBody>
           <Flex justify="center" align="center">
             <Text fontSize="4xl" fontWeight="bold">

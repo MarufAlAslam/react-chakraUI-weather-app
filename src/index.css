@@ -13,3 +13,40 @@
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 767px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  .search {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    width: 65% !important;
+    margin: auto;
+  }
+  table {
+    max-width: 100%;
+    margin: auto;
+  }
+  .chakra-card {
+    width: 70%;
+    margin: auto;
+  }
+  .css-f8dp1p {
+    margin-top: 0;
+  }
+  p.chakra-text.css-h13d01 {
+    font-size: 22px;
+  }
+  p.chakra-text.css-1jijfcn {
+    font-size: 21px;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+  tr td:first-child {
+    font-weight: bold;
+  }
+}
